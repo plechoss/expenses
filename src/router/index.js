@@ -8,6 +8,7 @@ console.log('-------------------');
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_APP_BASE_PATH),
   routes: [
+    { path: "*", redirect: "/expenses/home" },
     {
       path: "/expenses/home",
       name: "home",
